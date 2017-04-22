@@ -1,0 +1,64 @@
+{
+    "env": {
+        "doc": "The applicaton environment",
+        "format": [
+            "production",
+            "staging",
+            "development",
+            "localhost"
+        ],
+        "default": "localhost",
+        "env": "NODE_ENV"
+    },
+    "port": {
+        "format": "Number",
+        "default": 8444
+    },
+    "log": {
+        "level": {
+            "format": "String",
+            "default": "info",
+            "env": "LOG_LEVEL"
+        }
+    },
+    "db": {
+        "user": {
+            "format": "String",
+            "default": null
+        },
+        "password": {
+            "format": "String",
+            "default": null
+        },
+        "database": {
+            "doc": "Database name",
+            "format": "String",
+            "default": null
+        },
+        "host": {
+            "doc": "Database host name/IP",
+            "format": "String",
+            "default": null
+        },
+        "charset": {
+            "format": "String",
+            "default": "UTF8MB4_GENERAL_CI"
+        },
+        "acquireTimeout": {
+            "format": "Number",
+            "default": 60000
+        },
+        "port": {
+            "format": "Number",
+            "default": 3306
+        },
+        "connectionLimit": {
+            "format": "Number",
+            "default": 5
+        },
+        "timezone": {
+            "format": "String",
+            "default": "utc"
+        }
+    }
+}

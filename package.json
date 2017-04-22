@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "anything",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuba9303/nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuba9303/nodejs/issues"
+  },
+  "homepage": "https://github.com/kuba9303/nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "convict": "^3.0.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "express-load": "^1.1.15",
+    "mysql": "^2.13.0",
+    "pino": "^4.3.0"
+  }
+}
