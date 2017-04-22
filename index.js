@@ -70,8 +70,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
-
-/**
+app.get('/user/:id', function (req, res) {
+    logger.info(req.params, 'req.params from request');
+    // Fake row from database
+    res.json({
+        "id": req.params.id,
+        "username": "Jan",
+        "city": "Warszawa",
+        "age": 12
+    });
+});
+/**no
  * Handle global 404
  */
 app.use((req, res, next) => {
